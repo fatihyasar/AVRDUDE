@@ -49,9 +49,8 @@ echo "OK"
 # done
 ###############################################################
 echo "Replacing/updating files:"
-
 rm -f /usr/local/bin/avrsetup
-mv /home/linaro/pbin/AVRDUDE/avrdude/avrsetup /usr/local/bin
+mv /home/linaro/pbin/AVRDUDE/avrdude/avrsetup /usr/local/bin/avrsetup
 chmod 755 /usr/local/bin/avrsetup
 
 cd /etc
