@@ -33,7 +33,7 @@ fi
 echo "OK"
 
 echo -n "  Arduino IDE: "
-if [ ! -f /usr/share/arduino/hardware/arduino/programmers.txt ]; then
+if [ ! -f /usr/share/arduino/hardware/arduino/avr/programmers.txt ]; then
   echo "Not installed. Please install it first"
   exit 1
 fi
@@ -51,7 +51,7 @@ echo "OK"
 echo "Replacing/updating files:"
 
 rm -f /usr/local/bin/avrsetup
-mv /home/linaro/Dexter/lib/AVRDUDE/avrdude/avrsetup /usr/local/bin
+mv /home/linaro/pbin/AVRDUDE/avrdude/avrsetup /usr/local/bin
 chmod 755 /usr/local/bin/avrsetup
 
 cd /etc
