@@ -20,7 +20,6 @@ do168 () {
   exit 0
 }
 
-
 echo    ""
 echo    "Initialising a new ATmega microcontroller for use with the Gertboard."
 
